@@ -1,0 +1,78 @@
+#mainProgram {
+  display: flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  background: url(../images/main_program_bg.png) black 100%/cover no-repeat;
+}
+#mainProgram .program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65rem;
+  gap: 2.625rem;
+}
+#mainProgram .program .title {
+  display: flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+#mainProgram .program .title h4 {
+  color: #FFF;
+  font-size: 1.67394rem;
+  font-weight: 500;
+  line-height: 2.75rem;
+  letter-spacing: 0.05981rem;
+}
+#mainProgram .program .title hr {
+  width: 3rem;
+  height: 0rem;
+  color: #EC5242;
+}
+#mainProgram .program .cards {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+#mainProgram .program .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8125rem;
+  padding: 1.5rem 1.125rem;
+  flex: 1 0 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+#mainProgram .program .cards .card h5 {
+  color: var(--primary-c-olor, #EC5242);
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+#mainProgram .program .cards .card p {
+  color: #FFF;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.01563rem;
+}
+#mainProgram .program .seemore {
+  display: flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+#mainProgram .program .seemore p {
+  color: #FFF;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03125rem;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
