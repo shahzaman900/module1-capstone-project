@@ -122,12 +122,11 @@ header {
     }
 
     #humburger {
-    display: flex;
-    position: fixed;
-    // color: white;
-    top: 1rem;
-    left: 1rem;
-    cursor: pointer;
+      display: flex;
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      cursor: pointer;
     }
   }
 }

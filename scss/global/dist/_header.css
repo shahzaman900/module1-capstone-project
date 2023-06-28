@@ -1,0 +1,102 @@
+header {
+  box-shadow: 0px 4px 8px 0px rgba(167, 167, 167, 0.25);
+}
+header .top-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  background-color: #3E3E3E;
+}
+header .top-banner .banner {
+  display: flex;
+  width: 100%;
+  max-width: 65rem;
+  padding: 0.3125rem 0.625rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+header .top-banner .banner p {
+  color: white;
+}
+header .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .menu .menu-bottom {
+  display: flex;
+  width: 100%;
+  max-width: 65rem;
+  padding: 0.5rem 0rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu .menu-bottom .left-menu {
+  display: flex;
+  align-items: center;
+  gap: 5.375rem;
+}
+header .menu .menu-bottom .left-menu .left {
+  display: flex;
+  align-items: center;
+  gap: 5.375rem;
+}
+header .menu .menu-bottom .left-menu .left li {
+  list-style: none;
+}
+header .menu .menu-bottom .left-menu button {
+  display: flex;
+  padding: 0.8125rem 1.375rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border: 3px solid #EC5242;
+  color: #EC5242;
+  background-color: white;
+}
+header #humburger {
+  display: none;
+}
+@media (max-width: 768px) {
+  header {
+    box-shadow: none;
+  }
+  header .top-banner {
+    display: none;
+  }
+  header #mobile-menu {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #EC5242;
+  }
+  header #mobile-menu .menu-bottom img {
+    display: none;
+  }
+  header #mobile-menu .menu-bottom .left-menu .left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+    position: fixed;
+    top: 83px;
+    justify-content: center;
+    width: 100%;
+  }
+  header #mobile-menu .menu-bottom .left-menu .left a {
+    color: white;
+  }
+  header #mobile-menu .menu-bottom .left-menu button {
+    display: none;
+  }
+  header #humburger {
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+  }
+}

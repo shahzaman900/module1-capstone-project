@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background-image: url(../images/main_big.png);
+  object-fit: cover;
 }
 #headline .content {
   display: flex;
@@ -70,4 +70,23 @@
   font-family: Lato;
   font-weight: 500;
   letter-spacing: -0.03125rem;
+}
+@media (max-width: 768px) {
+  #headline {
+    background-color: #EC5242;
+  }
+  #headline .content {
+    max-width: unset;
+    gap: 1rem;
+  }
+  #headline .content .heading h3 {
+    font-size: 1.5rem;
+  }
+  #headline .content .heading h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 5.625rem;
+    letter-spacing: -0.09rem;
+    background-image: url(../images/bg.jpg);
+  }
 }
