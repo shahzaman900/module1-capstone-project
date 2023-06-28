@@ -1,4 +1,4 @@
-@mixin mobile {
+@mixin mobileHeadline {
   @media (max-width: 768px) {
     @content;
   }
@@ -22,6 +22,12 @@
     align-items: flex-start;
     gap: 1.875rem;
 
+    @include mobileHeadline {
+     max-width: none;
+     padding-left: 1rem;
+     padding-right: 1rem;
+  }
+
     .heading {
       display: flex;
       flex-direction: column;
@@ -32,6 +38,10 @@
         color: var(--primary-c-olor, #EC5242);
         font-size: 2.85438rem;
         letter-spacing: 0.08725rem;
+
+        @include mobileHeadline {
+          font-size: 1.5rem;
+        }
       }
 
       h1 {
@@ -42,6 +52,14 @@
           line-height: 5.625rem;
           letter-spacing: -0.09rem;
           background-image: url(../images/bg.jpg);
+
+          @include mobileHeadline {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 3rem;
+          letter-spacing: -0.09rem;
+          background-image: url(../images/bg.jpg);
+        }
       }
     }
 
@@ -53,6 +71,10 @@
       gap: 0.625rem;
       border: 5px solid #FFF;
       background: #FAFAFB;
+
+      @include mobileHeadline {
+        width: 100%;
+      }
 
       p {
         color: var(--secondary-color, #272A31);
@@ -72,43 +94,28 @@
       h4 {
         color: var(--secondary-color, #272A31);
         font-size: 2.25rem;
-        font-family: Lato;
         font-weight: 900;
         letter-spacing: 0.09375rem;
+
+        @include mobileHeadline {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+
       }
 
       p {
         color: var(--secondary-color, #272A31);
         font-size: 1.5rem;
-        font-family: Lato;
         font-weight: 500;
         letter-spacing: -0.03125rem;
+
+        @include mobileHeadline {
+          font-size: 1rem;
+        }
       }
     }
   }
 
-  @include mobile {
-    background-color: #EC5242;
 
-    .content {
-      max-width: unset;
-      gap: 1rem;
-
-      .heading {
-
-        h3 {
-          font-size: 1.5rem;
-        }
-
-        h1 {
-          font-size: 3rem;
-          font-weight: 900;
-          line-height: 5.625rem;
-          letter-spacing: -0.09rem;
-          background-image: url(../images/bg.jpg);
-        }
-
-      }
-    }
-  }
 }

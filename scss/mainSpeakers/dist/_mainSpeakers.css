@@ -54,6 +54,12 @@
   width: 8.625rem;
   height: 8.5625rem;
 }
+@media (max-width: 768px) {
+  #mainSpeakers .speakers .speaker-cards .card img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 #mainSpeakers .speakers .speaker-cards .card .content {
   display: flex;
   flex-direction: column;
@@ -64,14 +70,25 @@
   color: #272A31;
   width: 19.3125rem;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05981rem;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers .speaker-cards .card .content h2 {
+    width: auto;
+  }
 }
 #mainSpeakers .speakers .speaker-cards .card .content h4 {
   color: var(--primary-c-olor, #EC5242);
   width: 19.3125rem;
   font-size: 1rem;
   letter-spacing: 0.05981rem;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers .speaker-cards .card .content h4 {
+    width: auto;
+    font-size: 14px;
+  }
 }
 #mainSpeakers .speakers .speaker-cards .card .content hr {
   width: 3rem;
@@ -84,4 +101,10 @@
   font-size: 1rem;
   font-family: Lato;
   letter-spacing: 0.05981rem;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers .speaker-cards .card .content p {
+    width: auto;
+    font-size: 14px;
+  }
 }

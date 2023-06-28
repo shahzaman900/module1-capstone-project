@@ -1,3 +1,10 @@
+@mixin mainSpeakers {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+
 #mainSpeakers {
   display: flex;
   justify-content: center;
@@ -56,6 +63,11 @@
         img {
           width: 8.625rem;
           height: 8.5625rem;
+
+          @include mainSpeakers {
+             width: 5rem;
+             height: 5rem;
+          }
         }
 
         .content {
@@ -68,8 +80,12 @@
             color: #272A31;
             width: 19.3125rem;
             font-size: 1.5rem;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 0.05981rem;
+
+            @include mainSpeakers {
+              width: auto;
+            }
           }
 
           h4 {
@@ -77,6 +93,11 @@
             width: 19.3125rem;
             font-size: 1rem;
             letter-spacing: 0.05981rem;
+
+            @include mainSpeakers {
+              width: auto;
+              font-size: 14px;
+            }
           }
 
           hr {
@@ -91,6 +112,11 @@
             font-size: 1rem;
             font-family: Lato;
             letter-spacing: 0.05981rem;
+
+            @include mainSpeakers {
+              width: auto;
+              font-size: 14px;
+            }
           }
         }
       }
