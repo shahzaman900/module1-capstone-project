@@ -6,7 +6,9 @@
   align-items: center;
   gap: 0.625rem;
   flex-shrink: 0;
-  background: url(../images/main_program_bg.png) black 100%/cover no-repeat;
+  background-image: url(/scss/images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: #272a32;
 }
 #mainProgram .program {
   display: flex;

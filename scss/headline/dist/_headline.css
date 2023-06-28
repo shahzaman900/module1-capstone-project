@@ -6,8 +6,9 @@
   flex-shrink: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/main_big.png);
-  object-fit: cover;
+  background-image: url(/scss/images/main_big.png);
+  background-repeat: repeat-x;
+  background-position: center center;
 }
 #headline .content {
   display: flex;

@@ -1,5 +1,5 @@
 @mixin mainProgram {
-  @media (max-width: 768px) {
+  @media  (max-width: 768px) {
     @content;
   }
 }
@@ -13,7 +13,9 @@
   align-items: center;
   gap: 0.625rem;
   flex-shrink: 0;
-  background: url(../images/main_program_bg.png) rgb(0, 0, 0) 100% / cover no-repeat;
+  background-image: url(/scss/images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: #272a32;
 
   .program {
     display: flex;
@@ -69,8 +71,8 @@
         background: rgba(255, 255, 255, 0.10);
 
         @include mainProgram {
-         flex: auto;
-         flex-direction: row;
+          flex: auto;
+          flex-direction: row;
         }
 
         h5 {
