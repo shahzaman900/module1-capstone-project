@@ -131,8 +131,9 @@ header #humburger {
   align-items: center;
   flex-shrink: 0;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background-image: url(../images/main_big.png);
+  object-fit: cover;
 }
 #headline .content {
   display: flex;
@@ -140,6 +141,13 @@ header #humburger {
   flex-direction: column;
   align-items: flex-start;
   gap: 1.875rem;
+}
+@media (max-width: 768px) {
+  #headline .content {
+    max-width: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 #headline .content .heading {
   display: flex;
@@ -152,6 +160,11 @@ header #humburger {
   font-size: 2.85438rem;
   letter-spacing: 0.08725rem;
 }
+@media (max-width: 768px) {
+  #headline .content .heading h3 {
+    font-size: 1.5rem;
+  }
+}
 #headline .content .heading h1 {
   display: flex;
   flex-direction: column;
@@ -161,6 +174,15 @@ header #humburger {
   letter-spacing: -0.09rem;
   background-image: url(../images/bg.jpg);
 }
+@media (max-width: 768px) {
+  #headline .content .heading h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -0.09rem;
+    background-image: url(../images/bg.jpg);
+  }
+}
 #headline .content .discription {
   display: flex;
   width: 70%;
@@ -169,6 +191,11 @@ header #humburger {
   gap: 0.625rem;
   border: 5px solid #FFF;
   background: #FAFAFB;
+}
+@media (max-width: 768px) {
+  #headline .content .discription {
+    width: 100%;
+  }
 }
 #headline .content .discription p {
   color: var(--secondary-color, #272A31);
@@ -186,16 +213,25 @@ header #humburger {
 #headline .content .location h4 {
   color: var(--secondary-color, #272A31);
   font-size: 2.25rem;
-  font-family: Lato;
   font-weight: 900;
   letter-spacing: 0.09375rem;
+}
+@media (max-width: 768px) {
+  #headline .content .location h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 }
 #headline .content .location p {
   color: var(--secondary-color, #272A31);
   font-size: 1.5rem;
-  font-family: Lato;
   font-weight: 500;
   letter-spacing: -0.03125rem;
+}
+@media (max-width: 768px) {
+  #headline .content .location p {
+    font-size: 1rem;
+  }
 }
 
 #mainProgram {
@@ -212,8 +248,13 @@ header #humburger {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 65rem;
+  max-width: 65rem;
   gap: 2.625rem;
+}
+@media (max-width: 768px) {
+  #mainProgram .program {
+    width: 100%;
+  }
 }
 #mainProgram .program .title {
   display: flex;
@@ -240,6 +281,12 @@ header #humburger {
   align-items: flex-start;
   gap: 0.25rem;
 }
+@media (max-width: 768px) {
+  #mainProgram .program .cards {
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+}
 #mainProgram .program .cards .card {
   display: flex;
   flex-direction: column;
@@ -248,6 +295,12 @@ header #humburger {
   padding: 1.5rem 1.125rem;
   flex: 1 0 0;
   background: rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 768px) {
+  #mainProgram .program .cards .card {
+    flex: auto;
+    flex-direction: row;
+  }
 }
 #mainProgram .program .cards .card h5 {
   color: var(--primary-c-olor, #EC5242);
@@ -260,6 +313,11 @@ header #humburger {
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: 0.01563rem;
+}
+@media (max-width: 768px) {
+  #mainProgram .program .cards .card p {
+    text-align: left;
+  }
 }
 #mainProgram .program .seemore {
   display: flex;
@@ -275,4 +333,115 @@ header #humburger {
   letter-spacing: 0.03125rem;
   text-decoration-line: underline;
   cursor: pointer;
+}
+
+#mainSpeakers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+#mainSpeakers .speakers {
+  display: flex;
+  width: 100%;
+  max-width: 65rem;
+  padding: 4.625rem 0rem 0rem 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
+  align-self: stretch;
+}
+#mainSpeakers .speakers .title {
+  display: flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+#mainSpeakers .speakers .title h2 {
+  color: #272A31;
+  font-size: 1.67394rem;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 2.75rem;
+  letter-spacing: 0.05981rem;
+}
+#mainSpeakers .speakers .title hr {
+  width: 3rem;
+  height: 0rem;
+  color: #EC5242;
+}
+#mainSpeakers .speakers .speaker-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  row-gap: 1.5rem;
+  flex-wrap: wrap;
+}
+#mainSpeakers .speakers .speaker-cards .card {
+  display: flex;
+  padding: 0.625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+#mainSpeakers .speakers .speaker-cards .card img {
+  width: 8.625rem;
+  height: 8.5625rem;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers .speaker-cards .card img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+#mainSpeakers .speakers .speaker-cards .card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+#mainSpeakers .speakers .speaker-cards .card .content h2 {
+  color: #272A31;
+  width: 19.3125rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05981rem;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers .speaker-cards .card .content h2 {
+    width: auto;
+  }
+}
+#mainSpeakers .speakers .speaker-cards .card .content h4 {
+  color: var(--primary-c-olor, #EC5242);
+  width: 19.3125rem;
+  font-size: 1rem;
+  letter-spacing: 0.05981rem;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers .speaker-cards .card .content h4 {
+    width: auto;
+    font-size: 14px;
+  }
+}
+#mainSpeakers .speakers .speaker-cards .card .content hr {
+  width: 3rem;
+  height: 0rem;
+  color: gray;
+}
+#mainSpeakers .speakers .speaker-cards .card .content p {
+  color: var(--secondary-color, #272A31);
+  width: 19.3125rem;
+  font-size: 1rem;
+  font-family: Lato;
+  letter-spacing: 0.05981rem;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers .speaker-cards .card .content p {
+    width: auto;
+    font-size: 14px;
+  }
 }
