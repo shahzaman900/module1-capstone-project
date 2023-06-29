@@ -163,6 +163,7 @@ Give a ⭐️ if you like this project and how I managed to build it!
 - The original design ideal from Microverse💕.
 - Project from [Microverse](https://bit.ly/MicroverseTN) module 1.
 - Thanks to the Microverse team for the great curriculum.
+- Thanks to [Cindy Shin](https://www.behance.net/adagio07) the author of the original design.
 - Thanks to the Code Reviewer(s) for the insightful feedbacks.
 - A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
 - Hat tip to anyone whose code was used.
