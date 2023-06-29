@@ -23,6 +23,18 @@ const speakers = [
     profession: 'Storyteller Panel:',
     discription: 'Mario Matos, John Lee, David Kromminga',
   },
+  {
+    speakerImage: './images/speaker_04.png',
+    speakerName: 'Ruth Padilla-DeBorst',
+    profession: 'Storyteller Panel:',
+    discription: 'Mario Matos, John Lee, David Kromminga',
+  },
+  {
+    speakerImage: './images/speaker_04.png',
+    speakerName: 'Ruth Padilla-DeBorst',
+    profession: 'Storyteller Panel:',
+    discription: 'Mario Matos, John Lee, David Kromminga',
+  },
 ];
 
 const speakerTwoCard = [
