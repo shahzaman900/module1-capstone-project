@@ -54,22 +54,24 @@
           font-weight: 900;
           line-height: 5.625rem;
           letter-spacing: -0.09rem;
-          background: url(../images/bg.jpg);
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-          background-clip: text;
-          background-position: right;
+          color: var(--primary-c-olor, #EC5242);
+          // background: url(../images/bg.jpg);
+          // -webkit-text-fill-color: transparent;
+          // -webkit-background-clip: text;
+          // background-clip: text;
+          // background-position: right;
 
           @include mobileHeadline {
           font-size: 3rem;
           font-weight: 700;
           line-height: 3rem;
           letter-spacing: -0.09rem;
-          background: url(../images/bg.jpg);
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-          background-clip: text;
-          background-position: right;
+          color: var(--primary-c-olor, #EC5242);
+          // background: url(../images/bg.jpg);
+          // -webkit-text-fill-color: transparent;
+          // -webkit-background-clip: text;
+          // background-clip: text;
+          // background-position: right;
         }
       }
     }

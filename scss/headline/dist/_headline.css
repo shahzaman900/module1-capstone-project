@@ -47,11 +47,7 @@
   font-weight: 900;
   line-height: 5.625rem;
   letter-spacing: -0.09rem;
-  background: url(../images/bg.jpg);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-position: right;
+  color: var(--primary-c-olor, #EC5242);
 }
 @media (max-width: 768px) {
   #headline .content .heading h1 {
@@ -59,11 +55,7 @@
     font-weight: 700;
     line-height: 3rem;
     letter-spacing: -0.09rem;
-    background: url(../images/bg.jpg);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-position: right;
+    color: var(--primary-c-olor, #EC5242);
   }
 }
 #headline .content .discription {
