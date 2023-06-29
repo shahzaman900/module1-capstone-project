@@ -59,7 +59,11 @@
     font-weight: 700;
     line-height: 3rem;
     letter-spacing: -0.09rem;
-    background-image: url(../images/bg.jpg);
+    background: url(/scss/images/bg.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: right;
   }
 }
 #headline .content .discription {

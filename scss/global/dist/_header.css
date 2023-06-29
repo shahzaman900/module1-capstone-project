@@ -38,6 +38,8 @@ header .menu .menu-bottom .left-menu {
   display: flex;
   align-items: center;
   gap: 5.375rem;
+  width: inherit;
+  justify-content: end;
 }
 header .menu .menu-bottom .left-menu .left {
   display: flex;
@@ -46,6 +48,12 @@ header .menu .menu-bottom .left-menu .left {
 }
 header .menu .menu-bottom .left-menu .left li {
   list-style: none;
+}
+header .menu .menu-bottom .left-menu .left li a {
+  color: #868686;
+}
+header .menu .menu-bottom .left-menu .left li .active {
+  color: #791e14 !important;
 }
 header .menu .menu-bottom .left-menu button {
   display: flex;

@@ -48,6 +48,8 @@ header {
         display: flex;
         align-items: center;
         gap: 5.375rem;
+        width: inherit;
+        justify-content: end;
 
         .left {
           display: flex;
@@ -56,6 +58,14 @@ header {
 
           li {
             list-style: none;
+
+            a {
+              color: #868686;
+            }
+
+            .active {
+              color: #791e14 !important;
+            }
           }
         }
 
