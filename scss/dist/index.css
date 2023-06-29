@@ -153,6 +153,12 @@ header #humburger {
   }
 }
 
+#footerSection .footer img {
+  width: 13.3125rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
 #headline {
   display: flex;
   flex-direction: column;
@@ -201,6 +207,15 @@ header #humburger {
   }
 }
 
+#logoSection .logo h1 {
+  color: #2c2c2c;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: -0.05625rem;
+}
+
 #headline .content .heading h1 {
   display: flex;
   flex-direction: column;
@@ -245,6 +260,16 @@ header #humburger {
   #headline .content .discription {
     width: 100%;
   }
+}
+
+#logoSection .logo p {
+  color: #838383;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3125rem;
+  letter-spacing: -0.03rem;
 }
 
 #headline .content .discription p {
@@ -332,6 +357,17 @@ header #humburger {
   letter-spacing: 0.05981rem;
 }
 
+#logoSection .logo hr {
+  width: 2.1875rem;
+  height: 0.125rem;
+  color: #a04038;
+}
+
+#logoSection .logo img {
+  width: auto;
+  height: 5rem;
+}
+
 #mainProgram .program .title hr {
   width: 3rem;
   height: 0;
@@ -369,10 +405,55 @@ header #humburger {
   }
 }
 
+#footerSection .footer .rights h5 {
+  color: var(--secondary-color, #272a31);
+  font-size: 1.67394rem;
+  font-weight: 500;
+  line-height: 2.75rem;
+  letter-spacing: 0.05981rem;
+}
+
 #mainProgram .program .cards .card h5 {
   color: var(--primary-c-olor, #ec5242);
   font-size: 1.375rem;
   line-height: 1.75rem;
+}
+
+#footerSection .footer .rights p {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: var(--secondary-color, #272a31);
+  font-size: 1rem;
+  letter-spacing: 0.05981rem;
+}
+
+#mainProgram .program .seemore p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03125rem;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+#aboutHeadline .hero-content .about p {
+  color: #000;
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+}
+
+#LastYear .last .content p {
+  color: #838383;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3125rem;
+  letter-spacing: -0.03rem;
 }
 
 #mainProgram .program .cards .card p {
@@ -395,15 +476,6 @@ header #humburger {
   flex-direction: column;
   align-items: center;
   gap: 0.625rem;
-}
-
-#mainProgram .program .seemore p {
-  color: white;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.03125rem;
-  text-decoration-line: underline;
-  cursor: pointer;
 }
 
 #mainSpeakers {
@@ -431,6 +503,12 @@ header #humburger {
   flex-direction: column;
   align-items: center;
   gap: 0.625rem;
+}
+
+#LastYear .last .content hr {
+  width: 2.1875rem;
+  height: 0.125rem;
+  color: #a04038;
 }
 
 #mainSpeakers .speakers .title h2 {
@@ -464,6 +542,22 @@ header #humburger {
   gap: 0.625rem;
 }
 
+#LastYear .last .pic img {
+  width: auto;
+  height: 14.75rem;
+}
+
+#partnersSection .partner .partners img {
+  display: flex;
+  width: 11.5rem;
+  height: 2.125rem;
+  padding: 0 0.11081rem 0.00181rem 0;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 0;
+  color: white;
+}
+
 #mainSpeakers .speakers .speaker-cards .card img {
   width: 8.625rem;
   height: 8.5625rem;
@@ -474,6 +568,14 @@ header #humburger {
     width: 5rem;
     height: 5rem;
   }
+}
+
+#LastYear .last .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 #mainSpeakers .speakers .speaker-cards .card .content {
@@ -497,6 +599,14 @@ header #humburger {
   }
 }
 
+#partnersSection .partner .title h4 {
+  color: white;
+  font-size: 1.67394rem;
+  font-weight: 500;
+  line-height: 2.75rem;
+  letter-spacing: 0.05981rem;
+}
+
 #mainSpeakers .speakers .speaker-cards .card .content h4 {
   color: var(--primary-c-olor, #ec5242);
   width: 19.3125rem;
@@ -509,6 +619,18 @@ header #humburger {
     width: auto;
     font-size: 14px;
   }
+}
+
+#partnersSection .partner .title hr {
+  width: 3rem;
+  height: 0;
+  color: #ec5242;
+}
+
+#aboutHeadline .hero-content .title hr {
+  width: 2.1875rem;
+  height: 0.125rem;
+  color: #a04038;
 }
 
 #mainSpeakers .speakers .speaker-cards .card .content hr {
@@ -570,20 +692,6 @@ header #humburger {
   gap: 0.625rem;
 }
 
-#partnersSection .partner .title h4 {
-  color: white;
-  font-size: 1.67394rem;
-  font-weight: 500;
-  line-height: 2.75rem;
-  letter-spacing: 0.05981rem;
-}
-
-#partnersSection .partner .title hr {
-  width: 3rem;
-  height: 0;
-  color: #ec5242;
-}
-
 #partnersSection .partner .partners {
   display: flex;
   width: 100%;
@@ -593,17 +701,6 @@ header #humburger {
   align-content: flex-start;
   gap: 2rem 1.5rem;
   flex-wrap: wrap;
-}
-
-#partnersSection .partner .partners img {
-  display: flex;
-  width: 11.5rem;
-  height: 2.125rem;
-  padding: 0 0.11081rem 0.00181rem 0rem;
-  justify-content: center;
-  align-items: flex-end;
-  flex-shrink: 0;
-  color: white;
 }
 
 #footerSection {
@@ -629,12 +726,6 @@ header #humburger {
   }
 }
 
-#footerSection .footer img {
-  width: 13.3125rem;
-  height: 2rem;
-  flex-shrink: 0;
-}
-
 #footerSection .footer .rights {
   display: flex;
   width: 100%;
@@ -642,23 +733,6 @@ header #humburger {
   align-items: flex-start;
   gap: 1rem;
   flex-shrink: 0;
-}
-
-#footerSection .footer .rights h5 {
-  color: var(--secondary-color, #272a31);
-  font-size: 1.67394rem;
-  font-weight: 500;
-  line-height: 2.75rem;
-  letter-spacing: 0.05981rem;
-}
-
-#footerSection .footer .rights p {
-  display: flex;
-  flex-direction: column;
-  align-self: stretch;
-  color: var(--secondary-color, #272a31);
-  font-size: 1rem;
-  letter-spacing: 0.05981rem;
 }
 
 #aboutHeadline {
@@ -705,27 +779,12 @@ header #humburger {
   background-position: right;
 }
 
-#aboutHeadline .hero-content .title hr {
-  width: 2.1875rem;
-  height: 0.125rem;
-  color: #a04038;
-}
-
 #aboutHeadline .hero-content .about {
   display: flex;
   padding: 2.1875rem 2rem;
   align-items: flex-start;
   gap: 0.625rem;
   background-color: white;
-}
-
-#aboutHeadline .hero-content .about p {
-  color: #000;
-  text-align: center;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5625rem;
 }
 
 #aboutHeadline .hero-content .contact {
@@ -754,36 +813,6 @@ header #humburger {
   gap: 2.1875rem;
 }
 
-#logoSection .logo h1 {
-  color: #2c2c2c;
-  font-size: 1.875rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.75rem;
-  letter-spacing: -0.05625rem;
-}
-
-#logoSection .logo hr {
-  width: 2.1875rem;
-  height: 0.125rem;
-  color: #a04038;
-}
-
-#logoSection .logo p {
-  color: #838383;
-  text-align: center;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.3125rem;
-  letter-spacing: -0.03rem;
-}
-
-#logoSection .logo img {
-  width: auto;
-  height: 5rem;
-}
-
 #LastYear {
   display: flex;
   padding: 4.0625rem 2rem;
@@ -802,14 +831,6 @@ header #humburger {
   max-width: 65rem;
 }
 
-#LastYear .last .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.25rem;
-}
-
 #LastYear .last .content h1 {
   color: #2c2c2c;
   font-size: 1.875rem;
@@ -819,33 +840,12 @@ header #humburger {
   letter-spacing: -0.05625rem;
 }
 
-#LastYear .last .content hr {
-  width: 2.1875rem;
-  height: 0.125rem;
-  color: #a04038;
-}
-
-#LastYear .last .content p {
-  color: #838383;
-  text-align: center;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.3125rem;
-  letter-spacing: -0.03rem;
-}
-
 #LastYear .last .pic {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5625rem;
   flex-wrap: wrap;
-}
-
-#LastYear .last .pic img {
-  width: auto;
-  height: 14.75rem;
 }
 
 @media (max-width: 768px) {
