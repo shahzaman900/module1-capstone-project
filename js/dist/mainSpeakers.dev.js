@@ -52,8 +52,6 @@ function speakersTwoCards() {
   });
 }
 
-var button = document.getElementById('seeMore'); // button.addEventListener('click', speakersCards());
-
 if (window.innerWidth <= 768) {
   speakersTwoCards();
 } else {
