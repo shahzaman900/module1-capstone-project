@@ -1,3 +1,9 @@
+@mixin mobileHeadline {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 #headline {
   display: flex;
   flex-direction: column;
@@ -5,8 +11,12 @@
   align-items: center;
   flex-shrink: 0;
   width: 100vw;
-  height: 90vh;
-  background-image: url(../images/main_big.png);
+  height: 100vh;
+  // height: 855px;
+  background-image: url(/scss/images/main_big.png);
+  background-repeat: repeat-x;
+  background-position: center center;
+
 
   .content {
     display: flex;
@@ -14,6 +24,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1.875rem;
+
+    @include mobileHeadline {
+     max-width: none;
+     padding-left: 1rem;
+     padding-right: 1rem;
+  }
 
     .heading {
       display: flex;
@@ -25,6 +41,10 @@
         color: var(--primary-c-olor, #EC5242);
         font-size: 2.85438rem;
         letter-spacing: 0.08725rem;
+
+        @include mobileHeadline {
+          font-size: 1.5rem;
+        }
       }
 
       h1 {
@@ -34,7 +54,25 @@
           font-weight: 900;
           line-height: 5.625rem;
           letter-spacing: -0.09rem;
-          background-image: url(../images/bg.jpg);
+          // color: var(--primary-c-olor, #EC5242);
+          background: url(../images/bg.jpg);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          background-position: right;
+
+          @include mobileHeadline {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 3rem;
+          letter-spacing: -0.09rem;
+          // color: var(--primary-c-olor, #EC5242);
+          background: url(../images/bg.jpg);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          background-position: right;
+        }
       }
     }
 
@@ -46,6 +84,10 @@
       gap: 0.625rem;
       border: 5px solid #FFF;
       background: #FAFAFB;
+
+      @include mobileHeadline {
+        width: 100%;
+      }
 
       p {
         color: var(--secondary-color, #272A31);
@@ -65,18 +107,28 @@
       h4 {
         color: var(--secondary-color, #272A31);
         font-size: 2.25rem;
-        font-family: Lato;
         font-weight: 900;
         letter-spacing: 0.09375rem;
+
+        @include mobileHeadline {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+
       }
 
       p {
         color: var(--secondary-color, #272A31);
         font-size: 1.5rem;
-        font-family: Lato;
         font-weight: 500;
         letter-spacing: -0.03125rem;
+
+        @include mobileHeadline {
+          font-size: 1rem;
+        }
       }
     }
   }
+
+
 }
