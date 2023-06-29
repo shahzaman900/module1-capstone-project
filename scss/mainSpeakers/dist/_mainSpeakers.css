@@ -108,3 +108,15 @@
     font-size: 14px;
   }
 }
+#mainSpeakers .speakers #seeMore {
+  display: none;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers #seeMore {
+    display: flex;
+    width: 80%;
+    padding: 1rem;
+    margin: 0 1rem;
+    justify-content: center;
+  }
+}
