@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 *,
@@ -132,8 +133,9 @@ header #humburger {
   flex-shrink: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/main_big.png);
-  object-fit: cover;
+  background-image: url(/scss/images/main_big.png);
+  background-repeat: repeat-x;
+  background-position: center center;
 }
 #headline .content {
   display: flex;
@@ -242,7 +244,9 @@ header #humburger {
   align-items: center;
   gap: 0.625rem;
   flex-shrink: 0;
-  background: url(../images/main_program_bg.png) black 100%/cover no-repeat;
+  background-image: url(/scss/images/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: #272a32;
 }
 #mainProgram .program {
   display: flex;
@@ -445,6 +449,18 @@ header #humburger {
     font-size: 14px;
   }
 }
+#mainSpeakers .speakers #seeMore {
+  display: none;
+}
+@media (max-width: 768px) {
+  #mainSpeakers .speakers #seeMore {
+    display: flex;
+    width: 80%;
+    padding: 1rem;
+    margin: 0 1rem;
+    justify-content: center;
+  }
+}
 
 #partnersSection {
   display: flex;
@@ -501,7 +517,7 @@ header #humburger {
   color: #FFF;
 }
 
-#partnersSection {
+#footerSection {
   display: flex;
   padding: 3.75rem 0.625rem;
   flex-direction: column;
@@ -509,19 +525,24 @@ header #humburger {
   align-items: center;
   gap: 0.625rem;
 }
-#partnersSection .footer {
+#footerSection .footer {
   display: flex;
   width: 100%;
   max-width: 65rem;
   align-items: flex-start;
   gap: 2.625rem;
 }
-#partnersSection .footer img {
+@media (max-width: 768px) {
+  #footerSection .footer {
+    flex-direction: column;
+  }
+}
+#footerSection .footer img {
   width: 13.3125rem;
   height: 2rem;
   flex-shrink: 0;
 }
-#partnersSection .footer .rights {
+#footerSection .footer .rights {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -529,14 +550,14 @@ header #humburger {
   gap: 1rem;
   flex-shrink: 0;
 }
-#partnersSection .footer .rights h5 {
+#footerSection .footer .rights h5 {
   color: var(--secondary-color, #272A31);
   font-size: 1.67394rem;
   font-weight: 500;
   line-height: 2.75rem;
   letter-spacing: 0.05981rem;
 }
-#partnersSection .footer .rights p {
+#footerSection .footer .rights p {
   display: flex;
   flex-direction: column;
   align-self: stretch;

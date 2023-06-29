@@ -54,7 +54,11 @@
           font-weight: 900;
           line-height: 5.625rem;
           letter-spacing: -0.09rem;
-          background-image: url(../images/bg.jpg);
+          background: url(/scss/images/bg.jpg);
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          background-position: right;
 
           @include mobileHeadline {
           font-size: 3rem;
