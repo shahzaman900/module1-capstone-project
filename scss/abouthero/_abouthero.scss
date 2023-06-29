@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-  background: url("/scss/images/about_bg_01.png") center center no-repeat rgb(247, 247, 248);
+  background: url("../images/about_bg_01.png") center center no-repeat rgb(247, 247, 248);
   height: auto;
   overflow: auto;
 
@@ -37,7 +37,7 @@
         line-height: 3rem;
         text-align: center;
         letter-spacing: -0.09rem;
-        background: url(/scss/images/bg.jpg);
+        background: url(../images/bg.jpg);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
